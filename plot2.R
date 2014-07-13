@@ -11,7 +11,7 @@ df2$datetime <- strptime(df2$datetime, "%d/%m/%Y %H:%M:%S")
 # opening png device; create "plot2.png" in working directory
 png(filename="plot2.png", width = 480, height = 480)
 
-# create histogram and send to png device
+# create plot and send to png device
 plot(df2$datetime, as.numeric(as.character(df2$Global_active_power)), type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 
 # close png device
